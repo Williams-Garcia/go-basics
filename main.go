@@ -13,6 +13,7 @@ import (
 	"live_class/average"
 	"live_class/statistics"
 	"live_class/animals"
+	"live_class/structures"
 ) //Logs
 
 // var number = 10
@@ -20,7 +21,7 @@ import (
 // const otherNumber = 20
 
 func main() {
-	menu()
+	fmt.Println(menu())
 	var eleccion int //Declarar variable y tipo antes de escanear, esto es obligatorio
 	fmt.Scanln(&eleccion)
 	switchOption(eleccion)
@@ -40,7 +41,7 @@ func main() {
 
 func menu() string {
 	menu := 
-	"Hola!\nQue clase de git te gustaria ejecutar?\n[1] Hola Mundo\n[2] Variables\n[3] GO dia 1\n[4] Go dia 2"
+	"Hola!\nQue clase de git te gustaria ejecutar?\n[1] Hola Mundo\n[2] Variables\n[3] GO dia 1\n[4] Go dia 2\n[5] Go dia 3\n"
 	
 	return menu
 }
@@ -65,23 +66,22 @@ func switchOption(eleccion int)  {
 		fmt.Println("Hola Mundo")
 		myPi := numbers.Pi
 		fmt.Println(myPi)
-
 	case 2:
 		fullName.PrintFullName()
 		fullName.PrintAddress()
 		weather.PrintWeather()
-	
 	case 3:
 		letter.Letter()
 		clients.GenerateClients()
 		month.GetMonthByNumber()
-	
 	case 4:
 		taxes.PrintMenu()
 		average.CalculateAverage(1,2,)
 		salary.IdentifySalary("c",150)
 		statistics.IdentifyOperation("average", 2, 4, 1)
 		animals.Init()
+	case 5:
+		structures.Init()
 	default:
 		fmt.Println("Clase aun no disponible")
 	}

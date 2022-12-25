@@ -4,6 +4,7 @@ import "fmt"
 
 func GetMonthByNumber()  {
 	var monthNumber int
+	fmt.Println("Ingrese mes")
 	fmt.Scanln(&monthNumber)
 	
 	switch monthNumber {
