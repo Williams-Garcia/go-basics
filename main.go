@@ -5,18 +5,13 @@ import (
 	"live_class/animals"
 	"live_class/average"
 	"live_class/clients"
-	"live_class/empty_interfaces"
-	"live_class/example_interfaces"
-	"live_class/example_pointers"
+	"live_class/ecommerce"
 	"live_class/fullName"
 	"live_class/letter"
-	"live_class/manage"
 	"live_class/month"
 	"live_class/numbers"
-	"live_class/products"
 	"live_class/salary"
 	"live_class/statistics"
-	"live_class/structures"
 	"live_class/taxes"
 	"live_class/weather"
 ) //Logs
@@ -88,12 +83,14 @@ func switchOption(eleccion int) {
 		statistics.IdentifyOperation("average", 2, 4, 1)
 		animals.Init()
 	case 5:
-		structures.Init()
-		products.Init()
-		manage.Init()
-		example_pointers.Init()
-		example_interfaces.Init()
-		empty_interfaces.Init()
+		// structures.Init()
+		// products.Init()
+		// manage.Init()
+		// example_pointers.Init()
+		// example_interfaces.Init()
+		// empty_interfaces.Init()
+		// students.Init()
+		ecommerce.Init()
 	default:
 		fmt.Println("Clase aun no disponible")
 	}
