@@ -1,16 +1,25 @@
 package structures
 
-import "fmt"
+import (
+	"fmt"
+	// "encoding/json"
+)
 
 type Person struct {
 	name string
-	age   int
+	age   uint
 	position Position
 }
 
+// type Person struct {
+// 	name string `json:"name"`
+// 	age   int `json:"age"`
+// 	position Position `json:"position"`
+// }
+
 type Position struct {
 	position string
-	number int
+	number uint
 }
 
 func Init()  {

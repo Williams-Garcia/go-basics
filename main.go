@@ -14,6 +14,8 @@ import (
 	"live_class/statistics"
 	"live_class/animals"
 	"live_class/structures"
+	"live_class/products"
+	"live_class/manage"
 ) //Logs
 
 // var number = 10
@@ -82,6 +84,8 @@ func switchOption(eleccion int)  {
 		animals.Init()
 	case 5:
 		structures.Init()
+		products.Init()
+		manage.Init()
 	default:
 		fmt.Println("Clase aun no disponible")
 	}
