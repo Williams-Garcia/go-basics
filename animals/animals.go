@@ -1,6 +1,5 @@
 package animals
 
-
 import "fmt"
 
 const (

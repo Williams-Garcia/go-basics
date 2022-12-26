@@ -4,7 +4,7 @@ import "fmt"
 
 var taxesSalary float64 = 0
 
-func PrintMenu()  {
+func PrintMenu() {
 	fmt.Println("Ingrese salario para calcular impuesto")
 	var salary float64
 	fmt.Scanln(&salary)
@@ -17,5 +17,5 @@ func calculateTaxes(salary float64) float64 {
 	} else if salary > 150000 {
 		taxesSalary = salary * .27
 	}
-	return taxesSalary 
+	return taxesSalary
 }

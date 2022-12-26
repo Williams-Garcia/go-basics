@@ -2,14 +2,14 @@ package fullName
 
 import "fmt"
 
-func PrintFullName()  {
+func PrintFullName() {
 	name := "Williams"
-	
+
 	fmt.Println(name)
 }
 
-func PrintAddress()  {
+func PrintAddress() {
 	address := "aV. IMAGINACION"
-	
+
 	fmt.Println(address)
 }

@@ -6,8 +6,8 @@ import (
 )
 
 type Person struct {
-	name string
-	age   uint
+	name     string
+	age      uint
 	position Position
 }
 
@@ -19,16 +19,16 @@ type Person struct {
 
 type Position struct {
 	position string
-	number uint
+	number   uint
 }
 
-func Init()  {
+func Init() {
 	getDescription()
 }
 func getDescription() {
 	p := Person{
-		name: "Gabriel",
-		age:   22,
+		name:     "Gabriel",
+		age:      22,
 		position: Position{"GoalKeeper", 1},
 	}
 

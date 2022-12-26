@@ -12,5 +12,5 @@ func CalculateAverage(notes ...float64) float64 {
 		sumNotes += note
 	}
 	fmt.Printf("El promedio es: %v\n", sumNotes/float64(len(notes)))
-	return sumNotes/float64(len(notes))
+	return sumNotes / float64(len(notes))
 }

@@ -8,21 +8,21 @@ const (
 	maximum = "maximum"
 )
 
-func averageFunc(nums[]int) int {
+func averageFunc(nums []int) int {
 	var sum int
 	for _, number := range nums {
 		if number > 0 {
-			sum += number			
+			sum += number
 		}
 	}
 	fmt.Printf("El promedio es: %v\n", sum/len(nums))
-	return sum/len(nums)
+	return sum / len(nums)
 }
 
-func findMaximum(nums[]int) int {
+func findMaximum(nums []int) int {
 	maximum := nums[0]
 	for _, number := range nums {
-		if number > maximum{
+		if number > maximum {
 			maximum = number
 		}
 	}
@@ -30,10 +30,10 @@ func findMaximum(nums[]int) int {
 	return maximum
 }
 
-func findMinimum(nums[]int) int {
+func findMinimum(nums []int) int {
 	minimum := nums[0]
 	for _, number := range nums {
-		if number < minimum{
+		if number < minimum {
 			minimum = number
 		}
 	}

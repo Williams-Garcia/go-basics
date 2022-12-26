@@ -10,31 +10,31 @@ package manage
 import "fmt"
 
 type Person struct {
-	id uint
-	name string
+	id          uint
+	name        string
 	dateOfBirth string
 }
 
 type Employee struct {
-	id uint
+	id       uint
 	position string
-	person Person
+	person   Person
 }
 
 func (e Employee) printDataEmployee() {
 	fmt.Println(e)
 }
 
-func Init()  {
+func Init() {
 	p := Person{
-		id: 1,
-		name: "Juan",
+		id:          1,
+		name:        "Juan",
 		dateOfBirth: "19-09-1999",
 	}
 	e := Employee{
-		id: 10,
+		id:       10,
 		position: "manager",
-		person: p,
+		person:   p,
 	}
 	e.printDataEmployee()
 }

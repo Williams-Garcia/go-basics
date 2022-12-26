@@ -3,11 +3,11 @@ package products
 import "fmt"
 
 type Product struct {
-	id uint
-	name string
-	price float64
+	id          uint
+	name        string
+	price       float64
 	description string
-	category Category
+	category    Category
 }
 
 type Category struct {
@@ -37,13 +37,13 @@ func (p Product) getById(id uint) Product {
 	return findProduct
 }
 
-func Init()  {
+func Init() {
 	p := Product{
-		id: 1,
-		name: "a",
-		price:   22.0,
+		id:          1,
+		name:        "a",
+		price:       22.0,
 		description: "a",
-		category: Category{"NI"},
+		category:    Category{"NI"},
 	}
 	p.save()
 	p.getAll()

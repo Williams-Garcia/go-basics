@@ -2,9 +2,9 @@ package statistics
 
 import "testing"
 
-func TestCalculateMinimum(t *testing.T)  {
+func TestCalculateMinimum(t *testing.T) {
 	//Arrange
-	nums := []int {1,403249,42,10,82}
+	nums := []int{1, 403249, 42, 10, 82}
 	expectedResultMinimum := 1
 
 	//Act
@@ -16,9 +16,9 @@ func TestCalculateMinimum(t *testing.T)  {
 	}
 }
 
-func TestCalculateMaximum(t *testing.T)  {
+func TestCalculateMaximum(t *testing.T) {
 	//Arrange
-	nums := []int {1,403249,42,10,82}
+	nums := []int{1, 403249, 42, 10, 82}
 	expectedResultMaximum := 403249
 
 	//Act
@@ -30,9 +30,9 @@ func TestCalculateMaximum(t *testing.T)  {
 	}
 }
 
-func TestCalculateAverage(t *testing.T)  {
+func TestCalculateAverage(t *testing.T) {
 	//Arrange
-	nums := []int {1,403249,42,10,82}
+	nums := []int{1, 403249, 42, 10, 82}
 	expectedResultAvg := 80677
 
 	//Act

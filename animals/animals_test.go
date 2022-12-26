@@ -5,7 +5,7 @@ import "testing"
 func TestDog(t *testing.T) {
 	//Arrange
 	dogs := 10.0
-	expectedFood:= 100.0
+	expectedFood := 100.0
 
 	//Act
 	result := Dog(dogs)
@@ -19,7 +19,7 @@ func TestDog(t *testing.T) {
 func TestCat(t *testing.T) {
 	//Arrange
 	cats := 10.0
-	expectedFood:= 50.0
+	expectedFood := 50.0
 
 	//Act
 	result := Cat(cats)
@@ -33,7 +33,7 @@ func TestCat(t *testing.T) {
 func TestMouse(t *testing.T) {
 	//Arrange
 	mouses := 5.0
-	expectedFood:= 1.25
+	expectedFood := 1.25
 
 	//Act
 	result := Mouse(mouses)
@@ -47,7 +47,7 @@ func TestMouse(t *testing.T) {
 func TestSpider(t *testing.T) {
 	//Arrange
 	spider := 8.0
-	expectedFood:= 1.2
+	expectedFood := 1.2
 
 	//Act
 	result := Spider(spider)

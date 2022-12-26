@@ -2,8 +2,8 @@ package maps
 
 import "fmt"
 
-func maps()  {
-	myMap := map[string]int{"Benji" : 20, "Nahu" : 26}
+func maps() {
+	myMap := map[string]int{"Benji": 20, "Nahu": 26}
 	fmt.Println(myMap)
 	myMap["Messi"] = 31
 	fmt.Println(myMap)

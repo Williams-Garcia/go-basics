@@ -2,7 +2,7 @@ package salary
 
 import "testing"
 
-func TestCalculateSalaryTypeC(t *testing.T)  {
+func TestCalculateSalaryTypeC(t *testing.T) {
 	//Arrange
 	hoursInMinutes := 150
 	expectedResultSalaryTypeC := 2500.0
@@ -16,7 +16,7 @@ func TestCalculateSalaryTypeC(t *testing.T)  {
 	}
 }
 
-func TestCalculateSalaryTypeB(t *testing.T)  {
+func TestCalculateSalaryTypeB(t *testing.T) {
 	//Arrange
 	hoursInMinutes := 150
 	expectedResultSalaryTypeC := 51750.0
@@ -30,7 +30,7 @@ func TestCalculateSalaryTypeB(t *testing.T)  {
 	}
 }
 
-func TestCalculateSalaryTypeA(t *testing.T)  {
+func TestCalculateSalaryTypeA(t *testing.T) {
 	//Arrange
 	hoursInMinutes := 150
 	expectedResultSalaryTypeC := 247500.0
@@ -43,4 +43,3 @@ func TestCalculateSalaryTypeA(t *testing.T)  {
 		t.Errorf("Prueba fallo")
 	}
 }
-
