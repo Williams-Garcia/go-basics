@@ -7,6 +7,7 @@ import (
 	"live_class/clients"
 	"live_class/ecommerce"
 	"live_class/empty_interfaces"
+	"live_class/error"
 	"live_class/example_interfaces"
 	"live_class/example_pointers"
 	"live_class/fullName"
@@ -50,7 +51,8 @@ func menu() string {
 	menu :=
 		"Hola!\nQue clase de git te gustaria ejecutar?\n" +
 			"[1] Hola Mundo\n[2] Variables\n[3] GO dia 1\n" +
-			"[4] Go dia 2\n[5] Go dia 3\n"
+			"[4] Go dia 2\n[5] Go dia 3\n" +
+			"[6] Go dia 4\n"
 
 	return menu
 }
@@ -98,6 +100,8 @@ func switchOption(eleccion int) {
 		empty_interfaces.Init()
 		students.Init()
 		ecommerce.Init()
+	case 6:
+		error.Init()
 	default:
 		fmt.Println("Clase aun no disponible")
 	}
