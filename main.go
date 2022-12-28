@@ -7,11 +7,6 @@ import (
 	"live_class/clients"
 	"live_class/ecommerce"
 	"live_class/empty_interfaces"
-	"live_class/error"
-	"live_class/error_taxes_five"
-	"live_class/error_taxes_four"
-	"live_class/error_taxes_one"
-	"live_class/error_taxes_three"
 	"live_class/error_taxes_two"
 	"live_class/example_interfaces"
 	"live_class/example_pointers"
@@ -106,14 +101,14 @@ func switchOption(eleccion int) {
 		students.Init()
 		ecommerce.Init()
 	case 6:
-		error.Init()
-		error.Init2()
-		error.Init3()
-		error_taxes_one.Init()
+		// error.Init()
+		// error.Init2()
+		// error.Init3()
+		// error_taxes_one.Init()
 		error_taxes_two.Init()
-		error_taxes_three.Init()
-		error_taxes_four.Init()
-		error_taxes_five.Init()
+		// error_taxes_three.Init()
+		// error_taxes_four.Init()
+		// error_taxes_five.Init()
 	default:
 		fmt.Println("Clase aun no disponible")
 	}

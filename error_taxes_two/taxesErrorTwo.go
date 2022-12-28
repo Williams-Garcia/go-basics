@@ -6,7 +6,7 @@ import (
 )
 
 var (
-	errSalary = errors.New("Error: el salario es menor a 10000")
+	errSalary = &customError{"Error: el salario es menor a 10000"}
 )
 
 type customError struct {
@@ -19,13 +19,10 @@ func (c *customError) Error() string {
 
 func Init() {
 	salary := 10000
-	result, err := valid(salary)
-	if err != nil {
-		err = &customError{err.Error()}   //agregar error
+	result, err := valid(salary) //validamos salario
+	if err != nil {              //agregar error
 		err = fmt.Errorf("%w", errSalary) //anido el error
-		// fmt.Println(fmt.Errorf("%w, %s", err, errSalary))        //despues se compara
-		// fmt.Println(errors.Is(err, errSalary))
-		if errors.Is(err, errSalary) {
+		if errors.Is(err, errSalary) {    //despues se compara
 			panic(err)
 		}
 	}

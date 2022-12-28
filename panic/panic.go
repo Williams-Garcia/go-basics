@@ -1,0 +1,5 @@
+package panic
+
+func init() {
+
+}
