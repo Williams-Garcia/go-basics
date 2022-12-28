@@ -7,7 +7,6 @@ import (
 	"live_class/clients"
 	"live_class/ecommerce"
 	"live_class/empty_interfaces"
-	"live_class/error_taxes_two"
 	"live_class/example_interfaces"
 	"live_class/example_pointers"
 	"live_class/fullName"
@@ -15,6 +14,7 @@ import (
 	"live_class/manage"
 	"live_class/month"
 	"live_class/numbers"
+	"live_class/panic_example"
 	"live_class/products"
 	"live_class/salary"
 	"live_class/statistics"
@@ -105,10 +105,11 @@ func switchOption(eleccion int) {
 		// error.Init2()
 		// error.Init3()
 		// error_taxes_one.Init()
-		error_taxes_two.Init()
+		// error_taxes_two.Init()
 		// error_taxes_three.Init()
 		// error_taxes_four.Init()
 		// error_taxes_five.Init()
+		panic_example.Init()
 	default:
 		fmt.Println("Clase aun no disponible")
 	}

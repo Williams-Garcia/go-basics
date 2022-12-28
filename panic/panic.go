@@ -1,5 +1,0 @@
-package panic
-
-func init() {
-
-}
